@@ -12,7 +12,11 @@ route.get('/rate', [jwtmiddleware.verify], rateController.rateGetByIdUser)
 // Criar rota /rate/all e chamar rategetall, não autenticada
 route.get('/rate/all', rateController.rateGetAll)
 
+route.put('/rate/:id', [jwtmiddleware.verify], rateController.updateRate)
+
 module.exports = route
+
+
 
 /*
 2 - GetAll baseado no id de usuario do token [API Rate] V

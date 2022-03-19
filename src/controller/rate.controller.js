@@ -22,6 +22,12 @@ const rateGetByIdUser = (req, res) => {
 }
 
 
+const updateRate = (req, res) => {
+    const {id} = req.params
+    res.json({messege: `lembrar de implementar update: id ${id}`})
+}
+
+
 const rate = (req, res) => {
     const body = req.body
     const rate = new rateSchema({
@@ -40,5 +46,6 @@ const rate = (req, res) => {
 module.exports = {
     rate,
     rateGetAll,
-    rateGetByIdUser
+    rateGetByIdUser,
+    updateRate
 }
