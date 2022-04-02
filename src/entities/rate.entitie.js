@@ -7,7 +7,8 @@ const rateSchema = new mongoose.Schema({
     classification: mongoose.SchemaTypes.Number,
     createdAt: mongoose.SchemaTypes.Date,
     idUser: mongoose.SchemaTypes.Number,
-    description: mongoose.SchemaTypes.String
+    description: mongoose.SchemaTypes.String,
+    updatedAt: mongoose.SchemaTypes.Date
 })
 
 

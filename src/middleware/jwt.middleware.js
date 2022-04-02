@@ -8,7 +8,7 @@ const verify = (req, res, next) => {
         return res.status(401).json({message: 'Ta faltando token'})
     }   
 
-    jwt.verify(token, jwtSecret, function (err, decoded ){
+    jwt.verify(token, jwtSecret, function (err, decoded){
         if (err) {
             return res.status(500).json({message: 'Deu ruim'})
         }

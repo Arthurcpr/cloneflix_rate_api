@@ -1,0 +1,15 @@
+'5' comandos básicos git:
+ 
+ Principais:
+ - git checkout -b {BRANCH} # Cria uma nova BRANCH
+ - git checkout {BRANCH} # Muda para outra BRANCH
+ - git add {file or files} # Adiciona arquivos a BRANCH
+ - git pull origin {Nome da BRANCH} # Faz o download dos dados da BRANCH REMOTA
+ - git push origin {Nome da BRANCH} # Envia os dados pra BRANCH REMOTA
+ - git commit -m "message" # Adiciona menssagem ao seu commit
+ - git status # Mostra os status da BRANCH
+ 
+ Situacionais:
+ - git (ALIAS) (LINK DO GIT) # Adiciona uma referência REMOTA do GIT local
+ - git remote remove (ALIAS) # Remove uma referência remota do GIT local
+ - git commit --amend (I = insert[text], ESC = exit, :wq = write, quit) # Para alterar algo
